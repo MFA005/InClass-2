@@ -9,3 +9,41 @@ h2 {
     color: #308;
     font-size: 1.5em;
 }
+main{
+    float: left;
+    width: 60vw;
+    height: 60vh;
+    background-color: teal;
+}
+
+aside {
+    float: right;
+    width: 23vw;
+    background-color: orangered;
+    height: 60vh;
+}
+footer{
+    clear: both;
+    background-color: powderblue;
+}
+header{
+    background-color: blueviolet;
+}
+.structural{
+    padding: 10px;
+    margin: 10px;
+    border: 2px dashed orange;
+    border-width: 2px;
+}
+#para1{
+    color: rgb(0, 255, 42);
+}
+#para2{
+    color: rgb(255, 23, 55);
+}
+a:hover{
+    color: #699;
+}
+footer p{
+    font-size: 0.75em;
+}

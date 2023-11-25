@@ -1,21 +1,31 @@
 /*Muhammad Furqan Ahmed 8921348*/
+html{
+    font: normal italic bold 20px/1.5 Arial, Helvetica, sans-serif;
+}
 body {
-    font: normal italic bold 12px/1.5 Arial, Helvetica, sans-serif;
     width: 100vw;
     height: 100vh;
     background-color: hsla(275, 66%, 35%, 0.3);
+    display: flex;
+    flex-direction: column;
 }
 h2 {
     color: #308;
     font-size: 1.5em;
 }
 h1{
-    color: rgb(210, 255, 9); font-size: 30px;
+    color: rgb(210, 255, 9); font-size: 2.5em;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
 }
 main{
-    float: left;
-    width: 60vw;
     background-color: teal;
+    flex: 2 1 70%;
 }
 nav ul li{
     display: inline;
@@ -23,10 +33,10 @@ nav ul li{
 }
 nav ul li a{
     color: indigo;
-    border: 2px solid indigo;
+    border: 0.2em solid indigo;
     background-color: cornsilk;
     text-decoration: none;
-    padding: 5px;
+    padding: 1em;
 }
 nav ul li a:hover{
     color: cornsilk;
@@ -35,33 +45,30 @@ nav ul li a:hover{
 }
 
 aside {
-    float: right;
-    width: 23vw;
     background-color: orangered;
-   
+   flex: 1 1 30%;
 }
-aside ul li{
+aside li{
     
     list-style-type: square;
     line-height: 290%;
     color: rgba(81, 0, 156, 0.9);
 
 }
-aside ul li a{
+aside a{
     color: rgba(81, 0, 156, 0.9);
 } 
 footer{
-    clear: both;
     background-color: powderblue;
 }
 header{
     background-color: blueviolet;
 }
 .structural{
-    padding: 10px;
-    margin: 10px;
-    border: 2px dashed orange;
-    border-width: 2px;
+    padding: 0.5em;
+    margin: 0.5em;
+    border: 0.1em dashed orange;
+    border-width: 0.2em;
 }
 #para1{
     color: rgb(0, 255, 42);
@@ -70,8 +77,8 @@ header{
     color: rgb(255, 23, 55);
 }
 form{
-    border: 5px dashed hotpink;
-    padding: 5px;
+    border: 0.5em dashed hotpink;
+    padding: 0.5em;
 }
 input[type=text], input[type=email],input[type=submit], select, option {
     display : block;
@@ -95,9 +102,36 @@ fieldset{
     border: none;
 }
 
-aside ul li a:hover{
+aside a:hover{
     color: #699;
 }
 footer p{
     font-size: 0.75em;
+}
+img{
+    width: 80%;
+    height: 80%;
+}
+figure{
+    border: 0.2em solid black;
+    
+}
+#gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+}
+@media (max-width: 600px){
+    html{
+        font-size: 10px;
+    }
+    #gallery{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+    }
+    section{
+        display: block;
+    }
 }
